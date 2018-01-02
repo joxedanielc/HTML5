@@ -14,27 +14,23 @@ html {
 body {
 	font-family: 'Montserrat',Georgia, sans-serif;
 	font-size: 88%;
+	margin: 0;
+	padding: 0;
 }
 
 .container {
-	background-color: #ffffff;
-	max-width: 80%;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 940px;
+	margin: 0 auto;
 	padding-left: 40px;
 	padding-right: 40px;
-	padding-top: 15px;
-	box-sizing: border-box;
-	/*background-image: url('../images/color-tile.png');*/
-	background: url('../images/color-tile.png') left bottom repeat-x, #FFF url(../images/color-tile.png) left top repeat-x;
-	background-repeat: repeat-x;
 }
 
 header{
 	padding-top: 30px;
 	/*padding-bottom: 20px;*/
-	color: #809983;
-	background-image: url('../images/flower.jpg');
+	color: #FFF;
+	/*background-image: url('../images/flower.jpg');*/
+	background-color: #6b7f6d;
 }
 
 header h1 {
@@ -48,8 +44,9 @@ header p {
 }
 
 .content-area {
-	border-top: 3px solid #6b7f6d;
+	border-top: 0px solid #FFF;
 	border-bottom: 3px solid #6b7f6d;
+	background-color: #FFF;
 }
 
 .main-area {
@@ -71,7 +68,7 @@ header p {
 }
 
 .sidebar {
-	width: 34%;
+	width: 300px;
 	float: left;
 	background-color: #6b7f6d;
 	background-image: linear-gradient(to bottom, #6b7f6d, #FFF);
@@ -149,15 +146,15 @@ img{
 .site-nav a {
 	display: block;
 	text-decoration: none;
-	color: #6b7f6d;
+	color: #FFF;
 	padding: 10px 20px;
-	border: 3px solid #6b7f6d;
+	border: 3px solid #FFF;
 	border-bottom: none;
 }
 
 .site-nav a:hover {
-	background-color: #6b7f6d;
-	color: #ffffff;
+	background-color: #FFF;
+	color: #6b7f6d;
 }
 /*End Site Navigation*/
 

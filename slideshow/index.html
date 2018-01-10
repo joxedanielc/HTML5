@@ -3,11 +3,12 @@
 	
 	<head>
 		<meta charset="utf-8">
-		<title>Learning CSS</title>
+		<title>Leveraging JavaScript</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/screenResponsiveGrid.css">
+		<link rel="stylesheet" href="css/screen.css">
 		<script type="text/javascript" src="js/jquery.js"></script>
 		<script type="text/javascript" src="js/cycle2.js"></script>
+		<script type="text/javascript" src="js/declarativeToggle.js"></script>
 	</head>
 	
 	<body>
@@ -18,6 +19,8 @@
 			<div class="container">
 				<h1>Website Title</h1>
 				<p class="hide-small">Website slogan included here.</p>
+
+				<span data-toggle-target=".site-nav" class="toggle-btn">MENU</span>
 
 				<nav class="site-nav">
 					<ul class="group">
@@ -38,52 +41,35 @@
 			<!-- container -->
 			<div class="container">
 				
+				<!-- row -->
 				<div class="row">
 					
-					<div class="col col-md-8">
-						<h2>Welcome to the page!</h2>
-				
-						<div class="row">
-							<div class="col col-sm-6 col-lg-3">
-									<div class="box-a">
-											<p>Key feature 1</p>
-										</div><!-- /box-a -->
-							</div>
-
-							<div class="col col-sm-6 col-lg-3">
-									<div class="box-a">
-											<p>Key feature 2</p>
-										</div><!-- /box-a -->
-							</div>
-
-							<div class="col col-sm-6 col-lg-3">
-									<div class="box-a">
-											<p>Key feature 3</p>
-										</div><!-- /box-a -->
-							</div>
-
-							<div class="col col-sm-6 col-lg-3">
-									<div class="box-a">
-											<p>Key feature 4</p>
-										</div><!-- /box-a -->
-							</div>
-
-						</div>
-
-						<div class="cycle-slideshow"  data-cycle-slides=".slide" data-cycle-pause-on-hover = "true">
+					<!-- col -->
+					<div class="col col-md-8 push-down-sm">
+						
+						<div class="cycle-slideshow" data-cycle-slides=".slide" data-cycle-pause-on-hover="true">
 							
-
 							<span class="cycle-prev">&laquo;</span>
 							<span class="cycle-next">&raquo;</span>
-
+							
 							<span class="cycle-pager"></span>
-
+							
 							<div class="slide">
-								<img src="images/bird.jpg" alt="Bird">
+								<img src="images/bee.jpg" alt="Bee">
 
 								<div class="slide-text">
-									<h3>Bird</h3>
-									<p>This is a bird <a href="#" class="btn-a">Call to action</a> </p> 
+									<h3>Bee Title Here!</h3>
+									<p>This is the caption or descriptive text for the bee slide. <a href="#" class="btn-a">Call to action!</a> </p>
+								</div>
+
+							</div>
+
+							<div class="slide">
+								<img src="images/duck.jpg" alt="Duck">
+
+								<div class="slide-text">
+									<h3>Duck Title Here!</h3>
+									<p>This is the caption or descriptive text for the duck slide.</p>
 								</div>
 
 							</div>
@@ -92,33 +78,47 @@
 								<img src="images/squirrel.jpg" alt="Squirrel">
 
 								<div class="slide-text">
-									<h3>Squirrel</h3>
-									<p>This is a squirrel</p>
+									<h3>Squirrel Title Here!</h3>
+									<p>This is the caption or descriptive text for the squirrel slide.</p>
 								</div>
 
 							</div>
-									
-						</div>
-					</div>
 
-					<div class="col col-md-4">
+						</div>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span data-toggle-text="Hide the full text..." data-toggle-target=".full-text" class="toggle-btn read-more">Read the full text...</span></p>
+						
+						<div class="full-text">
+							
+							<h2>Full Text</h2>
+
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+						</div>
+						
+					</div><!-- /col -->
+					
+					<!-- col -->
+					<div class="col col-md-4 sidebar">
 						<h3>Sidebar Heading</h3>
 						<p>Sidebar Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 						
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 						
 						<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-					</div>
-
-				</div>
-
+					</div><!-- /col -->
+					
+				</div><!-- /row -->
+				
 			</div><!-- /container -->
 			
-		</div><!-- /content-area -->
+		</div>
 
 		<footer>
 			<p>&copy; 2014 - This is the footer.</p>
 		</footer>
 		
+		
 	</body>
+	
 </html>
